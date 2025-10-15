@@ -18,7 +18,7 @@ public class DataPresenter implements DataContract.DataPresenter,DataContract.Da
 
     }
     @Override
-    public void OnPopularImagesSusses(JSONObject response) {
+    public void OnPopularImagesSusses(String response) {
         if (dataView!=null){
             dataView.hideLoading();
             dataView.GetPopularImagesSusses(response);
@@ -36,7 +36,7 @@ public class DataPresenter implements DataContract.DataPresenter,DataContract.Da
     }
 
     @Override
-    public void showAndUploadData(String ImagesName, String imagePath) {
+    public void UploadPopularData(String ImagesName, String imagePath) {
 
         if (dataView!=null){
             dataView.showLoading();

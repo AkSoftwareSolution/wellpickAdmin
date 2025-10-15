@@ -11,14 +11,14 @@ public interface DataContract {
     interface DataView {
         void showLoading();
         void hideLoading();
-        void GetPopularImagesSusses(JSONObject response);
+        void GetPopularImagesSusses(String response);
         void GetPopularImagesFailure(String message);
 
 
     }
 
     interface DataPresenter {
-        void showAndUploadData(String ImagesName,String imagePath);
+        void UploadPopularData(String ImagesName,String imagePath);
 
     }
 
@@ -26,7 +26,7 @@ public interface DataContract {
         void uploadPopularImages(String ImagesName,String imagePath,OnPopularImagesFinishedListener finishedListener);
 
         interface OnPopularImagesFinishedListener {
-            void OnPopularImagesSusses(JSONObject response);
+            void OnPopularImagesSusses(String response);
 
             void OnPopularImagesFailure(String message);
         }
