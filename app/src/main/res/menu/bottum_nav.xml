@@ -17,10 +17,6 @@
         android:title="Popular"
         android:icon="@drawable/img_2"
         />
- <item
-        android:id="@+id/AllImages"
-        android:title="AllImages"
-        android:icon="@drawable/img_4"
-        />
+
 
 </menu>
